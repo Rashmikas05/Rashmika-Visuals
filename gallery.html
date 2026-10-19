@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gallery — Rashmika Visuals | Photography & Visual Stories</title>
+<meta name="description" content="Browse the Rashmika Visuals gallery: wedding, portrait, product, event and nature photography, plus complete photography projects from Colombo, Sri Lanka.">
+<meta name="theme-color" content="#0c0e0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0c0e0d;--ink2:#131715;--card:#171c19;--ivory:#f3eee3;--gold:#c9a66b;--gold2:#e0c791;--muted:rgba(243,238,227,.66);--line:rgba(243,238,227,.14);
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);--pad:clamp(20px,5vw,64px);--head:72px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--head);-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--ivory);font-family:var(--sans);line-height:1.6;overflow-x:hidden;width:100%}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}svg{display:block}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+[hidden]{display:none!important}
+.wrap{width:100%;max-width:1320px;margin-inline:auto;padding-inline:var(--pad)}
+.eyebrow{color:var(--gold);font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase}
+h1,h2{font-family:var(--serif);font-weight:500;line-height:1;letter-spacing:-.015em;overflow-wrap:break-word}
+h2{font-size:clamp(2.3rem,6vw,4.25rem);margin:14px 0 18px}
+em{font-style:italic;color:var(--gold2);font-weight:400}
+.copy{max-width:46ch;color:var(--muted);font-size:15px;line-height:1.85}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 26px;border:1px solid var(--gold);border-radius:999px;font-size:13px;font-weight:500;letter-spacing:.06em;transition:background .4s var(--ease),color .4s var(--ease)}
+.btn:hover{background:var(--gold);color:#17130c}.btn.solid{background:var(--gold);color:#17130c}.btn.solid:hover{background:var(--gold2)}
+.link{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+.link:hover{color:var(--gold2);border-color:var(--gold)}
+.ico{width:18px;height:18px;fill:currentColor}
+
+/* ===== header / menu / footer (same as main site) ===== */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:1000;height:var(--head);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 var(--pad);border-bottom:1px solid transparent;transition:background .4s,height .4s,border-color .4s}
+.site-header.scrolled{height:60px;background:rgba(10,12,11,.82);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-color:var(--line)}
+.brand{font-family:var(--serif);font-size:1.45rem;font-weight:500;letter-spacing:.03em;line-height:1;white-space:nowrap}.brand i{font-weight:400;color:var(--gold2)}
+.desktop-nav{display:flex;gap:clamp(20px,2.6vw,38px)}
+.desktop-nav a{position:relative;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,238,227,.78);padding:8px 0}
+.desktop-nav a::after{content:"";position:absolute;left:0;bottom:2px;width:0;height:1px;background:var(--gold);transition:width .4s var(--ease)}
+.desktop-nav a:hover::after,.desktop-nav a.active::after{width:100%}.desktop-nav a.active{color:var(--ivory)}
+.head-actions{display:flex;justify-content:flex-end;align-items:center;gap:18px}.socials{display:flex;gap:4px}
+.socials a,.m-social a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;color:rgba(243,238,227,.8);transition:color .3s}
+.socials a:hover,.m-social a:hover{color:var(--gold2)}
+.head-actions .btn{min-height:40px;padding:0 20px;font-size:12px}
+.menu-toggle{display:none;width:48px;height:48px;margin-right:-10px;place-items:center}
+.menu-toggle span{display:block;width:26px;height:1px;background:var(--ivory)}.menu-toggle span+span{margin-top:8px;width:18px;margin-left:8px}
+.mobile-menu{position:fixed;inset:0;z-index:2000;display:flex;flex-direction:column;height:100vh;height:100dvh;overflow-y:auto;overscroll-behavior:contain;background:var(--ink);opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .45s var(--ease),transform .45s var(--ease),visibility .45s}
+.mobile-menu.open{opacity:1;visibility:visible;transform:none}
+.m-top{display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);min-height:72px;flex:none}
+.m-close{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--line);border-radius:50%}
+.m-close svg{width:18px;height:18px;stroke:var(--ivory);stroke-width:1.2;fill:none}
+.m-nav{flex:1;display:flex;flex-direction:column;justify-content:center;padding:16px var(--pad)}
+.m-nav a{display:flex;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:clamp(2.2rem,11vw,3.4rem);line-height:1.1;min-height:56px;transition:color .3s,padding-left .4s var(--ease)}
+.m-nav a small{font-family:var(--sans);font-size:11px;color:var(--gold);letter-spacing:.12em;min-width:22px}
+.m-nav a:hover,.m-nav a.active{color:var(--gold2);padding-left:8px}
+.m-foot{flex:none;padding:24px var(--pad) calc(28px + env(safe-area-inset-bottom,0px))}
+.m-label{display:flex;align-items:center;gap:14px;font-size:10px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase;margin-bottom:14px}.m-label::after{content:"";flex:1;height:1px;background:var(--line)}
+.m-social{display:flex;gap:10px}.m-social a{width:48px;height:48px;border:1px solid var(--line);color:var(--ivory)}.m-social a:hover{border-color:var(--gold)}.m-social .ico{width:20px;height:20px}
+.m-meta{margin-top:20px;font-size:11px;color:rgba(243,238,227,.45);letter-spacing:.06em}
+footer{background:#070a09;border-top:1px solid var(--line);margin-top:clamp(60px,9vw,120px)}
+.f-main{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center;padding-block:56px}
+.f-main nav{display:flex;gap:6px 26px;justify-content:center;flex-wrap:wrap}
+.f-main nav a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,238,227,.6);padding:8px 0;transition:color .3s}.f-main nav a:hover{color:var(--gold)}
+.f-main .m-social{justify-content:flex-end}.f-main .m-social a{width:44px;height:44px}
+.f-bot{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px;border-top:1px solid var(--line);font-size:12px;color:rgba(243,238,227,.45)}
+.top{display:grid;place-items:center;width:44px;height:44px;flex:none;border:1px solid var(--gold);border-radius:50%;color:var(--gold);transition:background .3s,color .3s}.top:hover{background:var(--gold);color:#15120d}
+
+/* ===== gallery hero ===== */
+.g-hero{padding:calc(var(--head) + clamp(48px,9vw,110px)) 0 clamp(48px,8vw,100px)}
+.g-hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,6vw,90px);align-items:end}
+.g-hero h1{font-size:clamp(2.9rem,9vw,7rem);line-height:.9;letter-spacing:-.03em;margin:20px 0 26px}
+.g-hero h1 span{display:block}.g-hero h1 em{display:block;padding-left:clamp(0px,5vw,90px)}
+.hero-frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--card)}
+.hero-frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:zoom 2.4s var(--ease) forwards}
+.hero-frame::after{content:"";position:absolute;inset:14px;border:1px solid rgba(243,238,227,.28);pointer-events:none}
+.hero-frame small{position:absolute;z-index:2;left:26px;bottom:24px;font-size:11px;letter-spacing:.2em;color:rgba(243,238,227,.8)}
+@keyframes zoom{to{transform:scale(1)}}@keyframes up{to{opacity:1;transform:none}}
+.in-up>*{opacity:0;transform:translateY(22px);animation:up 1s var(--ease) forwards}
+.in-up>:nth-child(1){animation-delay:.15s}.in-up>:nth-child(2){animation-delay:.3s}.in-up>:nth-child(3){animation-delay:.45s}.in-up>:nth-child(4){animation-delay:.6s}
+
+/* ===== sections ===== */
+.sec{padding:clamp(40px,6vw,80px) 0}
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:clamp(24px,4vw,44px)}
+.filters{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--pad)*-1) clamp(24px,4vw,40px);padding:0 var(--pad);-webkit-overflow-scrolling:touch}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:none;min-height:44px;padding:0 20px;border:1px solid var(--line);border-radius:999px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .3s,border-color .3s,background .3s}
+.filters button:hover{color:var(--ivory);border-color:var(--gold)}
+.filters button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#17130c}
+
+/* masonry: CSS columns keep every photo at its own ratio */
+.masonry{columns:3;column-gap:clamp(10px,1.4vw,18px);transition:opacity .35s ease}
+.masonry.fading{opacity:0}
+.tile{position:relative;display:block;width:100%;margin:0 0 clamp(10px,1.4vw,18px);break-inside:avoid;overflow:hidden;background:var(--card);cursor:pointer;text-align:left;aspect-ratio:var(--ar,3/2)}
+.tile .lq,.tile .hq{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile .lq{filter:blur(18px);transform:scale(1.15)}
+.tile .hq{opacity:0;transition:opacity .9s var(--ease),transform 1.2s var(--ease)}
+.tile.loaded .hq{opacity:1}.tile.loaded::before{display:none}
+.tile::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.07) 50%,transparent 70%);background-size:220% 100%;animation:shim 1.6s linear infinite}
+@keyframes shim{from{background-position:120% 0}to{background-position:-120% 0}}
+.tile.failed .hq{display:none}.tile.failed::after{content:"Image unavailable";position:absolute;inset:0;z-index:2;display:grid;place-items:center;font-size:12px;color:var(--muted)}
+.tile:hover .hq{transform:scale(1.05)}
+.cap{position:absolute;z-index:3;left:0;right:0;bottom:0;padding:48px 18px 16px;background:linear-gradient(0deg,rgba(0,0,0,.62),transparent);opacity:0;transform:translateY(8px);transition:opacity .5s var(--ease),transform .5s var(--ease);pointer-events:none}
+.cap span{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+.cap strong{font-family:var(--serif);font-weight:500;font-size:1.35rem;line-height:1.1}
+.tile:hover .cap,.tile:focus-visible .cap{opacity:1;transform:none}
+@media(hover:none){.cap{opacity:1;transform:none;padding-top:32px}.cap strong{font-size:1.1rem}}
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.empty{color:var(--muted);padding:40px 0}
+
+/* projects */
+.p-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,56px) clamp(14px,2vw,28px);align-items:start}
+.p-card{grid-column:span 6;display:block;text-align:left;width:100%}
+.p-card:nth-child(3n+1){grid-column:span 7}.p-card:nth-child(3n+2){grid-column:span 5;margin-top:clamp(0px,6vw,90px)}.p-card:nth-child(3n){grid-column:span 6}
+.p-cover{position:relative;aspect-ratio:var(--ar,4/5);overflow:hidden;background:var(--card)}
+.p-card:nth-child(3n+1) .p-cover{--ar:3/2}.p-card:nth-child(3n+2) .p-cover{--ar:4/5}.p-card:nth-child(3n) .p-cover{--ar:1/1}
+.p-cover .lq,.p-cover .hq{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.p-cover .lq{filter:blur(18px);transform:scale(1.15)}
+.p-cover .hq{opacity:0;transition:opacity .9s var(--ease),transform 1.2s var(--ease)}.p-cover.loaded .hq{opacity:1}
+.p-card:hover .hq{transform:scale(1.04)}
+.p-meta{display:flex;justify-content:space-between;gap:16px;margin-top:18px;align-items:baseline}
+.p-meta h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.05}
+.p-cat{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:4px;display:block}
+.p-meta time{font-size:12px;color:var(--muted);flex:none}
+.p-card p{margin-top:10px;color:var(--muted);font-size:14px;max-width:48ch}
+.p-card .link{margin-top:6px}
+
+/* project detail */
+.detail{padding-top:calc(var(--head) + clamp(32px,6vw,72px))}
+.d-top{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between;margin-bottom:clamp(28px,5vw,56px)}
+.d-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(32px,5vw,60px)}
+.d-head h1{font-size:clamp(2.6rem,7vw,5.5rem);margin:14px 0 0}
+.d-meta{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.share{gap:10px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:4000;transform:translate(-50%,20px);opacity:0;pointer-events:none;padding:12px 22px;background:var(--gold);color:#17130c;border-radius:999px;font-size:13px;font-weight:500;transition:opacity .4s,transform .4s var(--ease)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:3500;display:flex;flex-direction:column;background:rgba(6,8,7,.96);opacity:0;visibility:hidden;transition:opacity .4s ease,visibility .4s}
+.lb.open{opacity:1;visibility:visible}
+.lb-bar{display:flex;justify-content:space-between;align-items:center;padding:calc(10px + env(safe-area-inset-top,0px)) 16px 0 var(--pad);font-size:12px;letter-spacing:.16em;color:var(--muted)}
+.lb-btn{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--line);border-radius:50%;transition:border-color .3s,color .3s}
+.lb-btn:hover{border-color:var(--gold);color:var(--gold2)}.lb-btn svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.3;fill:none}
+.lb-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:clamp(8px,2vw,28px);padding:8px clamp(8px,2vw,24px)}
+.lb-fig{flex:1;min-width:0;height:100%;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.lb-fig img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;pointer-events:auto;transform:scale(.97);opacity:0;transition:opacity .45s ease,transform .6s var(--ease)}
+.lb.open .lb-fig img.ready{opacity:1;transform:none}
+.lb-cap{padding:6px var(--pad) calc(18px + env(safe-area-inset-bottom,0px));text-align:center;flex:none}
+.lb-cap strong{display:block;font-family:var(--serif);font-weight:500;font-size:1.5rem;line-height:1.15}
+.lb-cap span{display:block;margin-top:4px;font-size:13px;color:var(--muted);max-width:60ch;margin-inline:auto}
+
+@media(max-width:1100px){.socials{display:none}.masonry{columns:2}.g-hero .wrap,.d-head{grid-template-columns:1fr}.hero-frame{aspect-ratio:3/2;max-height:60vh}}
+@media(max-width:860px){:root{--head:64px}.site-header{grid-template-columns:1fr auto}.desktop-nav,.head-actions .btn{display:none}.menu-toggle{display:grid}
+.f-main{grid-template-columns:1fr;gap:24px}.f-main nav,.f-main .m-social{justify-content:flex-start}.head-row{flex-direction:column;align-items:flex-start}}
+@media(max-width:700px){.p-card,.p-card:nth-child(n){grid-column:1/-1;margin-top:0}.p-card:nth-child(n) .p-cover{--ar:4/5}.p-card:nth-child(3n+1) .p-cover{--ar:3/2}.brand{font-size:1.3rem}
+.f-bot{flex-wrap:wrap}.f-bot span:nth-child(2){display:none}.lb-stage{gap:0;position:relative}.lb-nav{position:absolute;z-index:2;bottom:8px;background:rgba(6,8,7,.6)}.lb-prev{left:12px}.lb-next{right:12px}}
+@media(max-width:420px){.masonry{columns:1}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.in-up>*,.js .rv{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js")</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></symbol>
+<symbol id="i-ph" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></symbol>
+</svg>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html#home" aria-label="Rashmika Visuals home">Rashmika <i>Visuals</i></a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#services">Services</a><a class="active" href="gallery.html" aria-current="page">Gallery</a><a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="head-actions">
+    <div class="socials" aria-label="Social media">
+      <a href="https://www.instagram.com/rashmika_photograph/" aria-label="Instagram"><svg class="ico"><use href="#i-ig"/></svg></a>
+      <a href="https://facebook.com/RashmikaVisual" aria-label="Facebook"><svg class="ico"><use href="#i-fb"/></svg></a>
+      <a href="https://wa.me/94770633282" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
+      <a href="tel:+94770633282" aria-label="Phone"><svg class="ico"><use href="#i-ph"/></svg></a>
+    </div>
+    <a class="btn" href="index.html#contact">Book a session</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true">
+  <div class="m-top"><a class="brand" href="index.html#home">Rashmika <i>Visuals</i></a>
+    <button class="m-close" type="button" aria-label="Close menu"><svg viewBox="0 0 18 18"><path d="M2 2l14 14M16 2L2 16"/></svg></button></div>
+  <nav class="m-nav" aria-label="Mobile navigation">
+    <a href="index.html#home"><small>01</small>Home</a><a href="index.html#about"><small>02</small>About</a><a href="index.html#services"><small>03</small>Services</a><a class="active" href="gallery.html"><small>04</small>Gallery</a><a href="index.html#contact"><small>05</small>Contact</a>
+  </nav>
+  <div class="m-foot"><p class="m-label">Connect with us</p>
+    <div class="m-social">
+      <a href="https://www.instagram.com/rashmika_photograph/" aria-label="Instagram"><svg class="ico"><use href="#i-ig"/></svg></a>
+      <a href="https://facebook.com/RashmikaVisual" aria-label="Facebook"><svg class="ico"><use href="#i-fb"/></svg></a>
+      <a href="https://wa.me/94770633282" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
+      <a href="tel:+94770633282" aria-label="Phone"><svg class="ico"><use href="#i-ph"/></svg></a>
+    </div>
+    <p class="m-meta">Colombo, Sri Lanka · © 2026 Rashmika Visuals</p></div>
+</div>
+
+<main id="main">
+  <!-- LIST VIEW: hero + gallery + projects -->
+  <div id="listView">
+    <section class="g-hero">
+      <div class="wrap">
+        <div class="in-up">
+          <p class="eyebrow">The gallery</p>
+          <h1><span>A Collection of</span><em>Visual Stories</em></h1>
+          <p class="copy">Every frame begins with light and ends with a feeling. Browse single photographs, or step into a full project to follow a shoot from first frame to last.</p>
+          <a class="link" style="margin-top:18px" href="#projects">Jump to projects</a>
+        </div>
+        <figure class="hero-frame"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=82" alt="Wedding couple in soft evening light" fetchpriority="high" decoding="async"><small>SELECTED WORK / 2026</small></figure>
+      </div>
+    </section>
+
+    <section class="sec" id="photographs" aria-labelledby="gTitle">
+      <div class="wrap">
+        <div class="head-row"><div><p class="eyebrow">Photographs</p><h2 id="gTitle" style="margin-bottom:0">Stories in <em>Every Frame</em></h2></div></div>
+        <div class="filters" id="filters" role="group" aria-label="Filter photographs by category"></div>
+        <div class="masonry" id="masonry"></div>
+        <p class="empty" id="empty" hidden>No photographs in this category yet.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="projects" aria-labelledby="pTitle">
+      <div class="wrap">
+        <div class="head-row"><div><p class="eyebrow">Photography stories</p><h2 id="pTitle" style="margin-bottom:0">Featured <em>Projects</em></h2></div>
+          <p class="copy" style="font-size:14px;max-width:34ch">Complete sets from a single shoot. Open a project to browse every image.</p></div>
+        <div class="p-grid" id="projectGrid"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- DETAIL VIEW: one project -->
+  <section class="detail" id="detailView" hidden aria-live="polite">
+    <div class="wrap">
+      <div class="d-top">
+        <a class="link" href="#projects" id="backLink">← All projects</a>
+        <button class="btn share" type="button" id="shareBtn" aria-label="Share this project">Share project</button>
+      </div>
+      <div class="d-head"><div><p class="d-meta" id="dMeta"></p><h1 id="dTitle"></h1></div><p class="copy" id="dDesc"></p></div>
+      <div class="masonry" id="detailGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap f-main">
+    <a class="brand" href="index.html#home">Rashmika <i>Visuals</i></a>
+    <nav aria-label="Footer navigation"><a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="gallery.html">Gallery</a><a href="index.html#contact">Contact</a></nav>
+    <div class="m-social">
+      <a href="https://www.instagram.com/rashmika_photograph/" aria-label="Instagram"><svg class="ico"><use href="#i-ig"/></svg></a>
+      <a href="https://facebook.com/RashmikaVisual" aria-label="Facebook"><svg class="ico"><use href="#i-fb"/></svg></a>
+      <a href="https://wa.me/94770633282" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
+    </div>
+  </div>
+  <div class="wrap f-bot"><span>© 2026 Rashmika Visuals. All rights reserved.</span><span>Photography · Brands · Events · Products</span><a href="#" class="top" aria-label="Back to top">↑</a></div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <div class="lb-bar"><span id="lbCount" aria-live="polite"></span><button class="lb-btn" id="lbClose" type="button" aria-label="Close viewer"><svg viewBox="0 0 18 18"><path d="M2 2l14 14M16 2L2 16"/></svg></button></div>
+  <div class="lb-stage" id="lbStage">
+    <button class="lb-btn lb-nav lb-prev" id="lbPrev" type="button" aria-label="Previous photo"><svg viewBox="0 0 18 18"><path d="M11 2L4 9l7 7"/></svg></button>
+    <div class="lb-fig"><img id="lbImg" alt=""></div>
+    <button class="lb-btn lb-nav lb-next" id="lbNext" type="button" aria-label="Next photo"><svg viewBox="0 0 18 18"><path d="M7 2l7 7-7 7"/></svg></button>
+  </div>
+  <div class="lb-cap"><strong id="lbTitle"></strong><span id="lbDesc"></span></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* =====================================================================
+   1) YOUR CONTENT — the only part you need to edit
+   Image URLs below are Unsplash SAMPLES. Replace each `src` with your own
+   photo URL (your domain, Cloudflare R2, etc.). Any normal https URL works.
+   aspectRatio = width/height of the photo, e.g. "3/2" landscape,
+   "4/5" or "2/3" portrait, "1/1" square. It reserves space so nothing jumps.
+   Categories are created automatically from the `category` values.
+   ===================================================================== */
+const galleryImages = [
+  // ADD NEW GALLERY IMAGES HERE (newest first is a good habit)
+  { src:"https://images.unsplash.com/photo-1519741497674-611481863552", title:"First Light", category:"Wedding", description:"A quiet moment before the celebration begins.", alt:"Wedding couple standing together in soft light", aspectRatio:"3/2" },
+  { src:"https://images.unsplash.com/photo-1494790108377-be9c29b29330", title:"Stillness", category:"Portrait", description:"Natural light, nothing staged.", alt:"Portrait of a woman looking away from the camera", aspectRatio:"4/5" },
+  { src:"https://images.unsplash.com/photo-1544787219-7f47ccb76574", title:"Tea Collection", category:"Product", description:"Ceylon tea styled with simple teaware.", alt:"Tea and teaware product photograph", aspectRatio:"1/1" },
+  { src:"https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05", title:"Morning Mist", category:"Nature", description:"Fog settling over the hills at dawn.", alt:"Misty forest landscape at dawn", aspectRatio:"3/2" },
+  { src:"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d", title:"Character", category:"Portrait", description:"A portrait built around expression.", alt:"Portrait of a man in natural light", aspectRatio:"2/3" },
+  { src:"https://images.unsplash.com/photo-1519167758481-83f550bb49b3", title:"The Reception", category:"Wedding", description:"Details from an evening celebration.", alt:"Elegant reception table set for an event", aspectRatio:"4/5" },
+  { src:"https://images.unsplash.com/photo-1506157786151-b8491531f063", title:"In The Moment", category:"Events", description:"Energy and atmosphere, captured as it happened.", alt:"Crowd at a live event with stage lights", aspectRatio:"3/2" },
+  { src:"https://images.unsplash.com/photo-1596040033229-a9821ebd058d", title:"Spice Stories", category:"Product", description:"Colour and texture from the spice market.", alt:"Colourful spices in small bowls", aspectRatio:"1/1" },
+  { src:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee", title:"Beyond the Frame", category:"Nature", description:"A wide landscape under open sky.", alt:"Wide mountain landscape under a clear sky", aspectRatio:"16/9" },
+  { src:"https://images.unsplash.com/photo-1464349095431-e9a21285b5f3", title:"Little Celebrations", category:"Events", description:"A birthday table, styled and photographed.", alt:"Birthday cake with candles", aspectRatio:"4/5" },
+  { src:"https://images.unsplash.com/photo-1504674900247-0877df9cc836", title:"Crafted for the Table", category:"Product", description:"Food styling for a commercial shoot.", alt:"Plated food with fresh ingredients", aspectRatio:"3/2" },
+  { src:"https://images.unsplash.com/photo-1441974231531-c6227db76b6e", title:"Canopy", category:"Nature", description:"Sunlight through tall trees.", alt:"Sunlight filtering through a forest canopy", aspectRatio:"2/3" },
+  { src:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80", title:"Soft Focus", category:"Portrait", description:"A close portrait with shallow depth of field.", alt:"Close portrait of a smiling woman", aspectRatio:"1/1" },
+  { src:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085", title:"Slow Mornings", category:"Lifestyle", description:"Everyday details, framed with care.", alt:"Cup of coffee on a wooden table", aspectRatio:"3/2" }
+];
+
+const photographyProjects = [
+  // ADD NEW PHOTOGRAPHY PROJECTS HERE
+  // `id` must be unique, lowercase, no spaces: it becomes the share link (gallery.html#project=ceylon-tea)
+  {
+    id: "ceylon-tea",
+    title: "Ceylon Tea — Product Photography",
+    category: "Product Photography",
+    description: "A product collection celebrating Ceylon tea: leaves, teaware and the quiet ritual of a cup.",
+    date: "2026",
+    cover: "https://images.unsplash.com/photo-1544787219-7f47ccb76574",   // REPLACE with your cover photo
+    images: [   // ADD OR REMOVE IMAGES FOR THIS PROJECT HERE
+      { src:"https://images.unsplash.com/photo-1544787219-7f47ccb76574", title:"Tea Collection", alt:"Tea and teaware product photography", aspectRatio:"1/1" },
+      { src:"https://images.unsplash.com/photo-1556679343-c7306c1976bc", title:"Tea Details", alt:"Tea leaves and tea preparation", aspectRatio:"4/5" },
+      { src:"https://images.unsplash.com/photo-1544078751-58fee2d8a03b", title:"Made in Ceylon", alt:"Ceylon tea product", aspectRatio:"3/2" },
+      { src:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085", title:"The Pour", alt:"Hot drink poured into a cup", aspectRatio:"2/3" }
+    ]
+  },
+  {
+    id: "golden-evening",
+    title: "Golden Evening — Wedding Story",
+    category: "Wedding Photography",
+    description: "A relaxed outdoor wedding, from preparations to the last dance.",
+    date: "2026",
+    cover: "https://images.unsplash.com/photo-1519741497674-611481863552",
+    images: [
+      { src:"https://images.unsplash.com/photo-1519741497674-611481863552", title:"First Light", alt:"Wedding couple in soft light", aspectRatio:"3/2" },
+      { src:"https://images.unsplash.com/photo-1519167758481-83f550bb49b3", title:"The Reception", alt:"Elegant reception table", aspectRatio:"4/5" },
+      { src:"https://images.unsplash.com/photo-1507504031003-b417219a0fde", title:"After Sunset", alt:"Warm outdoor evening event", aspectRatio:"3/2" }
+    ]
+  },
+  {
+    id: "island-light",
+    title: "Island Light — Landscapes",
+    category: "Nature Photography",
+    description: "Hills, forest and open sky, photographed in the first and last hours of the day.",
+    date: "2025",
+    cover: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+    images: [
+      { src:"https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05", title:"Morning Mist", alt:"Misty forest at dawn", aspectRatio:"3/2" },
+      { src:"https://images.unsplash.com/photo-1441974231531-c6227db76b6e", title:"Canopy", alt:"Sunlight through forest canopy", aspectRatio:"2/3" },
+      { src:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee", title:"Beyond the Frame", alt:"Wide mountain landscape", aspectRatio:"16/9" }
+    ]
+  }
+];
+
+/* =====================================================================
+   2) CODE — you should not need to change anything below this line
+   ===================================================================== */
+(function(){
+  "use strict";
+  var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var reduce=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+  /* Build sized URLs. Unsplash URLs get width/quality params; other hosts are used as-is. */
+  function sized(src,w,q){
+    if(!/images\.unsplash\.com/.test(src))return src;
+    var base=src.split("?")[0];return base+"?auto=format&fit=max&w="+w+"&q="+q;
+  }
+  function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.textContent=html;return e}
+
+  /* ---------- scroll reveal with stagger ---------- */
+  var io="IntersectionObserver" in window?new IntersectionObserver(function(es){
+    var n=0;es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.style.transitionDelay=reduce?"0s":(n++*90)+"ms";
+      e.target.classList.add("in");io.unobserve(e.target);
+    });
+  },{threshold:.08,rootMargin:"0px 0px -30px 0px"}):null;
+  function reveal(node){if(io)io.observe(node);else node.classList.add("in")}
+
+  /* ---------- progressive image: blurred preview -> sharp, with fallback ---------- */
+  function progressive(box,item,eager,w){
+    var lq=new Image();lq.className="lq";lq.alt="";lq.src=sized(item.src,32,20);lq.decoding="async";lq.setAttribute("aria-hidden","true");
+    var hq=new Image();hq.className="hq";hq.alt=item.alt||item.title||"";hq.decoding="async";
+    if(!eager)hq.loading="lazy";
+    hq.onload=function(){box.classList.add("loaded")};
+    hq.onerror=function(){box.classList.add("failed","loaded");lq.remove()};
+    hq.src=sized(item.src,w||1000,78);
+    box.appendChild(lq);box.appendChild(hq);
+    if(hq.complete&&hq.naturalWidth)box.classList.add("loaded");
+  }
+
+  /* ---------- masonry grid ---------- */
+  function renderGrid(container,items){
+    container.textContent="";
+    items.forEach(function(item,i){
+      var t=el("button","tile rv");t.type="button";
+      t.style.setProperty("--ar",item.aspectRatio||"3/2");
+      t.setAttribute("aria-label","View photo: "+(item.title||item.alt||"photograph"));
+      progressive(t,item,i<4,1000);
+      var cap=el("div","cap");
+      if(item.category)cap.appendChild(el("span",null,item.category));
+      cap.appendChild(el("strong",null,item.title||""));
+      t.appendChild(cap);
+      t.addEventListener("click",function(){openLB(items,i,t)});
+      container.appendChild(t);reveal(t);
+    });
+  }
+
+  /* ---------- filters (generated from data) ---------- */
+  var current="All",masonry=$("#masonry"),empty=$("#empty");
+  function buildFilters(){
+    var box=$("#filters"),cats=["All"];
+    galleryImages.forEach(function(g){if(g.category&&cats.indexOf(g.category)<0)cats.push(g.category)});
+    box.textContent="";
+    cats.forEach(function(c){
+      var b=el("button",null,c);b.type="button";b.setAttribute("aria-pressed",String(c===current));
+      b.addEventListener("click",function(){
+        if(c===current)return;current=c;
+        $$("button",box).forEach(function(x){x.setAttribute("aria-pressed",String(x.textContent===c))});
+        masonry.classList.add("fading");
+        setTimeout(function(){showGallery();masonry.classList.remove("fading")},reduce?0:320);
+      });
+      box.appendChild(b);
+    });
+    box.hidden=cats.length<3;
+  }
+  function showGallery(){
+    var list=galleryImages.filter(function(g){return current==="All"||g.category===current});
+    renderGrid(masonry,list);empty.hidden=list.length>0;
+  }
+
+  /* ---------- project cards ---------- */
+  function renderProjects(){
+    var grid=$("#projectGrid");grid.textContent="";
+    photographyProjects.forEach(function(p){
+      var a=el("a","p-card rv");a.href="#project="+encodeURIComponent(p.id);
+      a.setAttribute("aria-label","View project: "+p.title);
+      var cov=el("div","p-cover");progressive(cov,{src:p.cover,alt:p.title},false,1200);a.appendChild(cov);
+      var m=el("div","p-meta"),l=el("div");
+      l.appendChild(el("h3",null,p.title));l.appendChild(el("span","p-cat",p.category||""));
+      m.appendChild(l);if(p.date){var t=el("time",null,p.date);m.appendChild(t)}
+      a.appendChild(m);a.appendChild(el("p",null,p.description||""));
+      a.appendChild(el("span","link","Explore story →"));
+      grid.appendChild(a);reveal(a);
+    });
+  }
+
+  /* ---------- project detail view + URL routing (#project=id) ---------- */
+  var listView=$("#listView"),detailView=$("#detailView"),activeProject=null,lastY=0;
+  function route(){
+    var m=location.hash.match(/^#project=(.+)$/),p=m&&photographyProjects.filter(function(x){return x.id===decodeURIComponent(m[1])})[0];
+    if(p){
+      if(!activeProject)lastY=window.scrollY;
+      activeProject=p;
+      $("#dTitle").textContent=p.title;
+      $("#dMeta").textContent=[p.category,p.date].filter(Boolean).join("  ·  ");
+      $("#dDesc").textContent=p.description||"";
+      document.title=p.title+" — Rashmika Visuals";
+      var items=p.images.map(function(i){return{src:i.src,title:i.title,alt:i.alt,description:i.description,aspectRatio:i.aspectRatio,category:p.category}});
+      renderGrid($("#detailGrid"),items);
+      listView.hidden=true;detailView.hidden=false;window.scrollTo(0,0);
+    }else if(activeProject||!detailView.hidden){
+      activeProject=null;detailView.hidden=true;listView.hidden=false;
+      document.title="Gallery — Rashmika Visuals | Photography & Visual Stories";
+      var id=location.hash;if(id&&$(id)&&/^#[\w-]+$/.test(id))$(id).scrollIntoView();else window.scrollTo(0,lastY);
+    }
+  }
+  window.addEventListener("hashchange",route);
+
+  /* ---------- share ---------- */
+  var toast=$("#toast"),tt;
+  function say(msg){toast.textContent=msg;toast.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove("show")},2600)}
+  $("#shareBtn").addEventListener("click",function(){
+    if(!activeProject)return;
+    var url=location.origin+location.pathname+"#project="+encodeURIComponent(activeProject.id);
+    if(location.protocol==="file:")url=location.href;
+    var data={title:activeProject.title,text:activeProject.description,url:url};
+    if(navigator.share){navigator.share(data).catch(function(){})}
+    else if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(function(){say("Link copied")},function(){say(url)})}
+    else{var ta=el("textarea");ta.value=url;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");say("Link copied")}catch(e){say(url)}ta.remove()}
+  });
+
+  /* ---------- lightbox ---------- */
+  var lb=$("#lb"),lbImg=$("#lbImg"),items=[],idx=0,opener=null,sx=0;
+  function showLB(i){
+    idx=(i+items.length)%items.length;var it=items[idx];
+    lbImg.classList.remove("ready");
+    lbImg.onload=function(){lbImg.classList.add("ready")};
+    lbImg.onerror=function(){lbImg.classList.add("ready")};
+    lbImg.alt=it.alt||it.title||"";lbImg.src=sized(it.src,1800,85);
+    if(lbImg.complete&&lbImg.naturalWidth)lbImg.classList.add("ready");
+    $("#lbTitle").textContent=it.title||"";$("#lbDesc").textContent=it.description||"";
+    $("#lbCount").textContent=(idx+1)+" / "+items.length;
+    var one=items.length<2;$("#lbPrev").hidden=one;$("#lbNext").hidden=one;
+  }
+  function openLB(list,i,from){
+    items=list;opener=from;showLB(i);
+    lb.classList.add("open");lb.setAttribute("aria-hidden","false");document.body.classList.add("lock");
+    $("#lbClose").focus();
+  }
+  function closeLB(){
+    lb.classList.remove("open");lb.setAttribute("aria-hidden","true");document.body.classList.remove("lock");
+    if(opener)opener.focus();
+  }
+  $("#lbClose").addEventListener("click",closeLB);
+  $("#lbPrev").addEventListener("click",function(){showLB(idx-1)});
+  $("#lbNext").addEventListener("click",function(){showLB(idx+1)});
+  $("#lbStage").addEventListener("click",function(e){ /* backdrop only: not the image or buttons */
+    if(e.target===e.currentTarget||e.target.classList.contains("lb-fig"))closeLB();
+  });
+  lb.addEventListener("touchstart",function(e){sx=e.changedTouches[0].clientX},{passive:true});
+  lb.addEventListener("touchend",function(e){var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50&&items.length>1)showLB(idx+(d<0?1:-1))},{passive:true});
+  document.addEventListener("keydown",function(e){
+    if(lb.classList.contains("open")){
+      if(e.key==="Escape")closeLB();
+      else if(e.key==="ArrowLeft")showLB(idx-1);
+      else if(e.key==="ArrowRight")showLB(idx+1);
+      else if(e.key==="Tab"){ /* keep focus inside the viewer */
+        var f=$$("button",lb).filter(function(b){return!b.hidden&&b.offsetParent!==null});
+        if(!f.length)return;var a=f[0],z=f[f.length-1];
+        if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}
+        else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}
+      }
+    }else if(e.key==="Escape"&&menu.classList.contains("open"))setMenu(false);
+  });
+
+  /* ---------- header + mobile menu (same behaviour as main site) ---------- */
+  var header=$("#siteHeader"),menu=$("#mobileMenu"),toggle=$(".menu-toggle"),mclose=$(".m-close");
+  function onScroll(){header.classList.toggle("scrolled",window.scrollY>40)}
+  onScroll();window.addEventListener("scroll",onScroll,{passive:true});
+  function setMenu(open){
+    menu.classList.toggle("open",open);document.body.classList.toggle("lock",open);
+    toggle.setAttribute("aria-expanded",String(open));menu.setAttribute("aria-hidden",String(!open));
+    if(open)mclose.focus();else if(menu.contains(document.activeElement))toggle.focus();
+  }
+  toggle.addEventListener("click",function(){setMenu(true)});mclose.addEventListener("click",function(){setMenu(false)});
+  $$("a",menu).forEach(function(a){a.addEventListener("click",function(){setMenu(false)})});
+  window.matchMedia("(min-width:861px)").addEventListener("change",function(m){if(m.matches&&menu.classList.contains("open"))setMenu(false)});
+  $(".top").addEventListener("click",function(e){e.preventDefault();window.scrollTo({top:0,behavior:reduce?"auto":"smooth"})});
+
+  /* ---------- start ---------- */
+  buildFilters();showGallery();renderProjects();route();
+})();
+</script>
+</body>
+</html>
