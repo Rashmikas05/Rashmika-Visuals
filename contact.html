@@ -285,23 +285,23 @@ a.c-row:hover{padding-left:8px}a.c-row:hover strong{color:var(--gold2)}
    ===================================================================== */
 const CONFIG = {
   // ⚠ REPLACE: paste your key from https://web3forms.com (free; sent to your email)
-  web3formsKey: "YOUR_WEB3FORMS_ACCESS_KEY",
+  web3formsKey: "0b0f0675-86dd-44e9-a698-fa0948292d11",
 
   phone:     "+94770633282",               // from your header (tel: link). Digits with + only
   phoneText: "+94 77 063 3282",            // how it appears on the page
   whatsapp:  "94770633282",                // international format, digits only, no + or spaces
-  email:     "hello@rashmikavisual.com",   // from your contact section
+  email:     "hello@rashmikaphotography.com",   // from your contact section
   instagram: "https://www.instagram.com/rashmika_photograph/",
   instagramText: "@rashmika_photograph",
-  website:     "https://YOUR-WEBSITE-ADDRESS.com",   // ⚠ REPLACE with your real website URL
-  websiteText: "YOUR-WEBSITE-ADDRESS.com",           // ⚠ REPLACE
+  website:     "https://rashmikaphotography.com",   // ⚠ REPLACE with your real website URL
+  websiteText: "rashmikaphotography.com",           // ⚠ REPLACE
 
   // ⚠ REPLACE with your full studio/business address. Your site only says "Colombo, Sri Lanka".
-  address: "Colombo, Sri Lanka",
+  address: "Panviladuwa watta, Godakanda, Karapitiya",
 
   // MAP: by default the map searches for the address above (no API key needed).
   // For an exact pin: Google Maps → Share → Embed a map → copy ONLY the src="..." URL here.
-  mapEmbedUrl: "",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.434423871089!2d80.22543387447818!3d6.072005628246394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171478701f181%3A0x3bd561925afd5440!2sRashmika%20Photography!5e0!3m2!1sen!2slk!4v1792508391382!5m2!1sen!2slk",
 
   // Services in the dropdown. Add, remove or rename freely.
   services: ["Wedding Photography","Engagement Photography","Pre-Wedding Photography","Portrait Photography","Event Photography","Product Photography","Commercial Photography","Fashion / Clothing Photography","Drone / Aerial Photography","Other"]
@@ -357,7 +357,7 @@ const CONFIG = {
 
   /* ----- form (Web3Forms) ----- */
   var form=$("#inquiryForm"),btn=$("#submitBtn"),btnText=$("#submitText"),msg=$("#formMsg"),sending=false;
-  $("#accessKey").value=CONFIG.web3formsKey;
+  $("#accessKey").value=CONFIG.web3formsKey; 
   var today=new Date();today.setMinutes(today.getMinutes()-today.getTimezoneOffset());
   $("#date").min=today.toISOString().slice(0,10);
 
