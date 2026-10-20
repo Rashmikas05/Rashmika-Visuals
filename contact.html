@@ -13,6 +13,7 @@
 :root{--ink:#0c0e0d;--ink2:#131715;--card:#171c19;--ivory:#f3eee3;--gold:#c9a66b;--gold2:#e0c791;--muted:rgba(243,238,227,.68);--line:rgba(243,238,227,.14);--err:#e8a39a;--ok:#b9d6a8;
 --serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);--pad:clamp(20px,5vw,64px);--head:72px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*{ -webkit-tap-highlight-color: rgba(201,166,107,0.3);}
 html{scroll-behavior:smooth;scroll-padding-top:var(--head);-webkit-text-size-adjust:100%}
 body{background:var(--ink);color:var(--ivory);font-family:var(--sans);line-height:1.6;overflow-x:hidden;width:100%}
 body.lock{overflow:hidden}
@@ -228,7 +229,6 @@ a.c-row:hover{padding-left:8px}a.c-row:hover strong{color:var(--gold2)}
             <div class="f"><label for="service">Photography service</label><select id="service" name="service" required><option value="">Select a service</option></select></div>
             <div class="f"><label for="date">Date <small>(if applicable)</small></label><input id="date" name="event_date" type="date"></div>
             <div class="f"><label for="location">Location <small>(if applicable)</small></label><input id="location" name="event_location" type="text" autocomplete="off" placeholder="Venue or city"></div>
-            <div class="f"><label for="budget">Estimated budget <small>(optional)</small></label><input id="budget" name="budget" type="text" placeholder="e.g. LKR 100,000"></div>
             <div class="f"><label for="inqSubject">Subject</label><input id="inqSubject" name="inquiry_subject" type="text" required maxlength="120" placeholder="What is this about?"></div>
             <div class="f full"><label for="message">Project details</label><textarea id="message" name="message" required minlength="10" placeholder="Tell us about your vision, timing and anything we should know."></textarea></div>
             <div class="f full"><label class="consent" for="consent" style="text-transform:none;letter-spacing:0;color:var(--muted);font-size:13px;margin:0"><input id="consent" name="privacy_consent" type="checkbox" value="Agreed" required><span>I agree that Rashmika Visuals may use these details to reply to my inquiry.</span></label></div>
