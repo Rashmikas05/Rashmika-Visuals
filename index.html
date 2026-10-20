@@ -49,6 +49,14 @@ h2 em,.hero h1 em{font-style:italic;color:var(--gold2);font-weight:400}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:0 28px;border:1px solid var(--gold);border-radius:999px;font-size:13px;font-weight:500;letter-spacing:.06em;color:var(--ivory);transition:background .4s var(--ease),color .4s var(--ease),transform .4s var(--ease)}
 .btn:hover{background:var(--gold);color:#17130c}
 .btn.solid{background:var(--gold);color:#17130c}
+.hero-cta .btn.solid{position:relative;overflow:hidden;}
+.hero-cta .btn.solid::before{content:"";position:absolute;top:0;left:-100%;width:50%;height:100%;background:linear-gradient(90deg,transparent, rgba(255,255,255,.35), rgba(255,255,255,.55),transparent);animation:goldSweep 4s linear infinite;}
+/* Arrow */
+.hero-cta .btn.solid::after{content:" →";display:inline-block;margin-left:8px;animation:arrowMove 2s ease-in-out infinite;}
+@keyframes goldSweep{0%{left:-60%;}100%{left:120%;}}
+@keyframes arrowMove{0%,100%{transform:translateX(0);}50%{transform:translateX(6px);}}
+.hero-cta .btn.solid:hover{transform:translateY(-2px);}
+
 .btn.solid:hover{background:var(--gold2)}
 .link{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
 .link:hover{color:var(--gold2);border-color:var(--gold)}
